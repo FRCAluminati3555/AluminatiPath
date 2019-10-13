@@ -654,9 +654,6 @@ function getDataString() {
     var lastHeading = 0;
     var continuousHeading = 0;
 
-    // Make first poing 0
-    set_segments += `		{0, 0, 10.000, 0},\n`;
-
     eachTimeSlice(function (left, right, i, center, lastPoint) {
         var angleOffset = 0;
         if (waypoints.length > 1)
